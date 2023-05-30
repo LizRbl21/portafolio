@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script/script.js"></script>
+    <title>Encriptador | Alura</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td class="blockInsert">
+                    <textarea id="blockText" class="blockText" placeholder="Inserte un texto aqui..." cols="30" rows="10"></textarea> <br>
+                    <input onclick="encriptar()" type="button" value="Encriptar">
+                    <input onclick="desencriptar()" type="button" value="Desencriptar">
+                    
+                </td>
+                <td class="blockShow">
+                    <div id="blockEmpty" class="blockEmpty">
+                        <img src="./images/monitoSentado.png" alt="monitoSentado" class="image">
+
+                        <p class="msgShow">No se ha ingresado ningun texto.</p>
+                    </div>
+                    <div id="blockFull" class="blockFull">
+                        <textarea id="blockTextShow" class="blockText" cols="30" rows="10"></textarea> <br>
+                        <input onclick="copyResult()" type="button" value="Copiar" class="buttonCopy">
+                    </div>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    
+</body>
+<footer>
+    <p>Desarrollador: Claudia Robles</p>
+    <p>Proyecto Alura: Encriptador</p>
+</footer>
+</html>
